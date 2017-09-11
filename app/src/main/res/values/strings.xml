@@ -2,10 +2,6 @@
     <string name="app_name">Shoe Size Bookmark</string>
     <string name="shoe_size">Shoe Size</string>
     <string name="shoes">Shoes</string>
-    <string name="shirt">Shirt</string>
-    <string name="pants">Pants</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="women">Women</string>
     <string name="men">Men</string>
@@ -15,4 +11,21 @@
     <string name="euro">EURO</string>
     <string name="inches">in</string>
     <string name="cm">cm</string>
+    <string name="about">About</string>
+    <string name="rate">Rate this app</string>
+    <string name="info">Info</string>
+    <string name="dialog_feedback">Give feedback</string>
+    <string name="dialog_ask_later">Later</string>
+    <string name="dialog_rate_app">Rate app</string>
+    <string name="rating_dialog_title">Info</string>
+    <string name="author_name">Cuong Mai</string>
+    <string name="rating_dialog_message1">Thank you for using</string>
+    <string name="rating_dialog_message2">Please rate this app or give some feedback!</string>
+    <string name="by">by</string>
+    <string name="author_email">cuong@cuongmai.net</string>
+
+    <string-array name="drawer_items">
+        <item>About</item>
+        <item>Rate this App</item>
+    </string-array>
 </resources>
