@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.20"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        >
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0.25"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:textSize="4pt"-->
+            <!--android:textAlignment="center"-->
+            <!--android:text=""-->
+            <!--/>-->
+
+        <ImageView
+            android:id="@+id/bookmark_img"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="bottom"
+            android:textAlignment="center"
+            android:src="@drawable/bookmark_outline_grey_24x24"
+            />
+        <TextView
+            android:id="@+id/bookmark_name_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:textSize="4pt"
+            android:textAlignment="center"
+            android:text="Cuong"
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/us_size_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.16"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="00"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/euro_size_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.16"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="00"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/uk_size_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.16"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="00"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/in_size_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.16"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="00"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/cm_size_text"
+        android:layout_width="0dp"
+        android:layout_weight="0.16"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="00"
+        android:textAlignment="center"
+        />
+
+</LinearLayout>

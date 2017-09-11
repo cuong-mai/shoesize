@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.cuongmai.shoeclothingsizeconverter.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@color/primary_text"
+        app:title="@string/app_name"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/shoes_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabIndicatorColor="@color/primary_text"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        app:tabGravity="fill"
+        app:tabTextColor="@color/secondary_text"
+        app:tabSelectedTextColor="@color/primary_text"
+        android:elevation="4dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/primary"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="wrap_content"
+            android:text="@string/us"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="wrap_content"
+            android:text="@string/euro"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="wrap_content"
+            android:text="@string/uk"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="wrap_content"
+            android:text="@string/inches"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.17"
+            android:layout_height="wrap_content"
+            android:text="@string/cm"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text"
+            />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/shoe_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+    />
+
+</LinearLayout>

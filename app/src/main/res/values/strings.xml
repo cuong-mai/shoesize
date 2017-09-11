@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Shoe Size</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="shoes">Shoes</string>
+    <string name="shirt">Shirt</string>
+    <string name="pants">Pants</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="women">Women</string>
+    <string name="men">Men</string>
+    <string name="plus_sign">+</string>
+    <string name="us">US</string>
+    <string name="uk">UK</string>
+    <string name="euro">EURO</string>
+    <string name="inches">in</string>
+    <string name="cm">cm</string>
+</resources>
