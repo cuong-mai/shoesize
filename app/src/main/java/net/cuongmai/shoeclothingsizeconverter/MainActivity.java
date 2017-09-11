@@ -23,15 +23,28 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.shoe_pager);
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
 
-        // Add Fragments to adapter one by one
-        adapter.addFragment(new ShoeMenFragment(), DatabaseHelper.TABLE_MEN);
-        adapter.addFragment(new ShoeWomenFragment(), DatabaseHelper.TABLE_WOMEN);
+        addFragment(adapter, DatabaseHelper.TABLE_MEN);
+        addFragment(adapter, DatabaseHelper.TABLE_WOMEN);
+        addFragment(adapter, DatabaseHelper.TABLE_YOUTH);
+        addFragment(adapter, DatabaseHelper.TABLE_KIDS);
+        addFragment(adapter, DatabaseHelper.TABLE_BABIES);
+
         viewPager.setAdapter(adapter);
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.shoes_tab);
         tabLayout.setupWithViewPager(viewPager);
 
     } // End of onCreate()
+
+    private void addFragment(ViewPagerAdapter adapter, String tableName) {
+        Bundle bundle = new Bundle();
+        bundle.putString(SizeChartFragment.STRING_TABLE_NAME, tableName);
+
+        SizeChartFragment sizeChartFragment = new SizeChartFragment();
+        sizeChartFragment.setArguments(bundle);
+
+        adapter.addFragment(sizeChartFragment, tableName);
+    }
 
     // Adapter for the viewpager using FragmentPagerAdapter
     class ViewPagerAdapter extends FragmentPagerAdapter {

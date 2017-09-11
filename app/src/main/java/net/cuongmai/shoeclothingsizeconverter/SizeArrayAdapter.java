@@ -21,8 +21,8 @@ import java.util.ArrayList;
  */
 
 public class SizeArrayAdapter extends ArrayAdapter<Size> {
-    private final int BOOKMARK_IMAGE_SELECTED_ID = R.drawable.bookmark_grey_24x24;
-    private final int BOOKMARK_IMAGE_UNSELECTED_ID = R.drawable.bookmark_outline_grey_24x24;
+    private final int BOOKMARK_IMAGE_SELECTED_ID = R.drawable.bookmark_selected;
+    private final int BOOKMARK_IMAGE_UNSELECTED_ID = R.drawable.bookmark_unselected;
 
     private Activity mContext;
     private DatabaseHelper mDatabaseHelper;
@@ -89,8 +89,8 @@ public class SizeArrayAdapter extends ArrayAdapter<Size> {
                     mDatabaseHelper.updateSizeBookmarkName(mTableName, currentSize.getId(), "");
                 } else {
                     final AlertDialog.Builder inputAlert = new AlertDialog.Builder(mContext);
-                    inputAlert.setTitle("Bookmark size");
-                    inputAlert.setMessage("Name(s) of the person(s) having this size");
+                    inputAlert.setTitle("Bookmark Size");
+                    inputAlert.setMessage("Person(s) having this size");
 
                     final EditText userInput = new EditText(mContext);
                     inputAlert.setView(userInput);

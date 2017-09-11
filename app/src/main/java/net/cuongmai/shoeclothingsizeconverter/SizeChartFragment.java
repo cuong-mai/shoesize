@@ -15,33 +15,43 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ShoeMenFragment extends Fragment {
-    private ArrayList<Size> sizeList;
-    private final String TABLE_NAME = DatabaseHelper.TABLE_MEN;
-    private final int LISTVIEW_ID = R.id.list_men;
+public class SizeChartFragment extends Fragment {
+    private String mTableName;
 
-    public ShoeMenFragment() {
+    private ArrayList<Size> sizeList;
+
+    public static final String STRING_TABLE_NAME = "tableName";
+
+    private final int LISTVIEW_ID = R.id.list_size;
+
+    public SizeChartFragment() {
         // Required empty public constructor
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        if (getArguments() != null) {
+            mTableName = getArguments().getString(STRING_TABLE_NAME);
+        }
+
         Activity context = getActivity();
 
         DatabaseHelper databaseHelper = new DatabaseHelper(context);
 
-        sizeList = databaseHelper.getAllSizes(TABLE_NAME);
+        sizeList = databaseHelper.getAllSizes(mTableName);
 
-        View view = inflater.inflate(R.layout.fragment_shoe_men, container, false);
+        View view = inflater.inflate(R.layout.fragment_size_chart, container, false);
         ListView listView = (ListView) view.findViewById(LISTVIEW_ID);
 
-        SizeArrayAdapter adapter = new SizeArrayAdapter(context, sizeList, databaseHelper, TABLE_NAME);
+        SizeArrayAdapter adapter = new SizeArrayAdapter(context, sizeList, databaseHelper, mTableName);
 
         listView.setAdapter(adapter);
 

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "database";
-    private static final int DB_VERSION = 2;
+    private static final int DB_VERSION = 5;
 
     public static final String TABLE_MEN = "Men";
     public static final String TABLE_WOMEN = "Women";
@@ -113,7 +113,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         createTable(db, TABLE_KIDS);
         createTable(db, TABLE_BABIES);
 
-        insertData(db, TABLE_MEN, "7", "39", "6", "8.8", "25", "James");
+        insertData(db, TABLE_MEN, "7", "39", "6", "8.8", "25", "");
         insertData(db, TABLE_MEN, "7.5", "40", "6.5", "25.5", "10", "");
         insertData(db, TABLE_MEN, "8", "40.5", "7", "26", "10.2", "");
         insertData(db, TABLE_MEN, "8.5", "41", "7.5", "26.5", "10.4", "");
@@ -130,6 +130,64 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         insertData(db, TABLE_MEN, "14", "48.5", "13", "32", "12.6", "");
         insertData(db, TABLE_MEN, "14.5", "49", "13.5", "32.5", "12.8", "");
         insertData(db, TABLE_MEN, "15", "50", "14", "33", "13", "");
+
+        insertData(db, TABLE_WOMEN, "5", "35", "2.5", "8.7", "22", "");
+        insertData(db, TABLE_WOMEN, "5.5", "35.5", "3", "8.9", "22.5", "");
+        insertData(db, TABLE_WOMEN, "6", "36", "3.5", "9.1", "23", "");
+        insertData(db, TABLE_WOMEN, "6.5", "37", "4", "9.3", "23.5", "");
+        insertData(db, TABLE_WOMEN, "7", "37.5", "4.5", "9.4", "24", "");
+        insertData(db, TABLE_WOMEN, "7.5", "38", "5", "9.6", "24.5", "");
+        insertData(db, TABLE_WOMEN, "8", "38.5", "5.5", "9.8", "25", "");
+        insertData(db, TABLE_WOMEN, "8.5", "39", "6", "10", "25.5", "");
+        insertData(db, TABLE_WOMEN, "9", "40", "6.5", "10.2", "26", "");
+        insertData(db, TABLE_WOMEN, "9.5", "40.5", "7", "10.4", "26.5", "");
+        insertData(db, TABLE_WOMEN, "10", "41", "7.5", "10.6", "27", "");
+        insertData(db, TABLE_WOMEN, "10.5", "42", "8", "10.8", "27.5", "");
+        insertData(db, TABLE_WOMEN, "11", "42.5", "8.5", "11", "28", "");
+        insertData(db, TABLE_WOMEN, "12", "44", "9.5", "11.4", "29", "");
+
+        insertData(db, TABLE_YOUTH, "3", "34", "2.5", "8.3", "21", "");
+        insertData(db, TABLE_YOUTH, "3.5", "34.5", "3", "8.9", "22.5", "");
+        insertData(db, TABLE_YOUTH, "4", "35", "3.5", "9.1", "23", "");
+        insertData(db, TABLE_YOUTH, "4.5", "36", "4", "9.2", "23.3", "");
+        insertData(db, TABLE_YOUTH, "5", "36.5", "4.5", "9.3", "23.5", "");
+        insertData(db, TABLE_YOUTH, "5.5", "37", "5", "9.4", "24", "");
+        insertData(db, TABLE_YOUTH, "6", "38", "5.5", "9.6", "24.5", "");
+        insertData(db, TABLE_YOUTH, "6.5", "38.5", "6", "9.7", "24.6", "");
+        insertData(db, TABLE_YOUTH, "7", "39", "6.5", "9.8", "25", "");
+
+        insertData(db, TABLE_KIDS, "10.5", "27", "10", "6.5", "16.5", "");
+        insertData(db, TABLE_KIDS, "11", "27.5", "10.5", "6.7", "17", "");
+        insertData(db, TABLE_KIDS, "11.5", "28", "11", "6.9", "17.5", "");
+        insertData(db, TABLE_KIDS, "12", "29", "11.5", "7.1", "18", "");
+        insertData(db, TABLE_KIDS, "12.5", "30", "12", "7.3", "18.5", "");
+        insertData(db, TABLE_KIDS, "13", "30.5", "12.5", "7.5", "19", "");
+        insertData(db, TABLE_KIDS, "13.5", "31", "13", "7.7", "19.5", "");
+        insertData(db, TABLE_KIDS, "1", "31.5", "13.5", "7.9", "20", "");
+        insertData(db, TABLE_KIDS, "2", "32.5", "1", "8.1", "20.5", "");
+        insertData(db, TABLE_KIDS, "2.5", "33", "2", "8.5", "21.5", "");
+        insertData(db, TABLE_KIDS, "3", "34", "2.5", "8.7", "22", "");
+
+        insertData(db, TABLE_BABIES, "0", "15", "0", "2.4", "6", "");
+        insertData(db, TABLE_BABIES, "1", "16", "0.5", "2.8", "7", "");
+        insertData(db, TABLE_BABIES, "1.5", "16.5", "1", "3.0", "7.5", "");
+        insertData(db, TABLE_BABIES, "2", "17", "1.5", "3.1", "8", "");
+        insertData(db, TABLE_BABIES, "2.5", "18", "2", "3.5", "9", "");
+        insertData(db, TABLE_BABIES, "3", "18.5", "2.5", "3.7", "9.5", "");
+        insertData(db, TABLE_BABIES, "3.5", "19", "3", "3.9", "10", "");
+        insertData(db, TABLE_BABIES, "4", "19.5", "3.5", "4.1", "10.5", "");
+        insertData(db, TABLE_BABIES, "4.5", "20", "4", "4.3", "11", "");
+        insertData(db, TABLE_BABIES, "5", "21", "4.5", "4.7", "12", "");
+        insertData(db, TABLE_BABIES, "5.5", "21.5", "5", "4.9", "12.5", "");
+        insertData(db, TABLE_BABIES, "6", "22", "5.5", "5.1", "13", "");
+        insertData(db, TABLE_BABIES, "6.5", "22.5", "6", "5.3", "13.5", "");
+        insertData(db, TABLE_BABIES, "7", "23.5", "6.5", "5.7", "14.5", "");
+        insertData(db, TABLE_BABIES, "7.5", "24", "7", "5.9", "15", "");
+        insertData(db, TABLE_BABIES, "8", "24.5", "7.5", "6.1", "15.5", "");
+        insertData(db, TABLE_BABIES, "8.5", "25", "8", "6.3", "16", "");
+        insertData(db, TABLE_BABIES, "9", "25.5", "8.5", "6.5", "16.5", "");
+        insertData(db, TABLE_BABIES, "9.5", "26", "9", "6.7", "17", "");
+        insertData(db, TABLE_BABIES, "10", "26.5", "9.5", "6.9", "17.5", "");
     }
 
     private void createTable(SQLiteDatabase db, String tableName) {
