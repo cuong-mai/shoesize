@@ -3,53 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
+    android:layout_height="64dp"
     >
 
-    <LinearLayout
+    <ImageView
+        android:id="@+id/bookmark_img"
         android:layout_width="0dp"
-        android:layout_weight="0.20"
+        android:layout_height="20dp"
+        android:layout_weight="0.10"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/bookmark_unselected"
+        />
+
+    <TextView
+        android:id="@+id/bookmark_name_text"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:layout_weight="0.15"
         android:gravity="center_vertical"
-        >
-        <!--<TextView-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_weight="0.25"-->
-            <!--android:gravity="center_vertical"-->
-            <!--android:textSize="4pt"-->
-            <!--android:textAlignment="center"-->
-            <!--android:text=""-->
-            <!--/>-->
-
-        <ImageView
-            android:id="@+id/bookmark_img"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:gravity="bottom"
-            android:textAlignment="center"
-            android:src="@drawable/bookmark_outline_grey_24x24"
-            />
-        <TextView
-            android:id="@+id/bookmark_name_text"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="0.5"
-            android:gravity="center_vertical"
-            android:textSize="4pt"
-            android:textAlignment="center"
-            android:text="Cuong"
-            />
-
-    </LinearLayout>
-
+        android:textSize="5pt"
+        android:textAlignment="center"
+        android:text="Cuong"
+        />
 
     <TextView
         android:id="@+id/us_size_text"
         android:layout_width="0dp"
-        android:layout_weight="0.16"
+        android:layout_weight="0.15"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:text="00"
@@ -59,7 +39,7 @@
     <TextView
         android:id="@+id/euro_size_text"
         android:layout_width="0dp"
-        android:layout_weight="0.16"
+        android:layout_weight="0.15"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:text="00"
@@ -69,7 +49,7 @@
     <TextView
         android:id="@+id/uk_size_text"
         android:layout_width="0dp"
-        android:layout_weight="0.16"
+        android:layout_weight="0.15"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:text="00"
@@ -79,7 +59,7 @@
     <TextView
         android:id="@+id/in_size_text"
         android:layout_width="0dp"
-        android:layout_weight="0.16"
+        android:layout_weight="0.15"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:text="00"
@@ -89,7 +69,7 @@
     <TextView
         android:id="@+id/cm_size_text"
         android:layout_width="0dp"
-        android:layout_weight="0.16"
+        android:layout_weight="0.15"
         android:layout_height="match_parent"
         android:gravity="center_vertical"
         android:text="00"
