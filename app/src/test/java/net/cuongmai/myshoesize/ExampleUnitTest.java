@@ -1,4 +1,4 @@
-package net.cuongmai.shoeclothingsizeconverter;
+package net.cuongmai.myshoesize;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package net.cuongmai.shoeclothingsizeconverter;
+package net.cuongmai.myshoesize;
 
 public class Size {
     private int mId;

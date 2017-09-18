@@ -8,7 +8,7 @@
     android:paddingBottom="16dp"
     android:paddingTop="0dp"
     android:background="@color/page_background"
-    tools:context="net.cuongmai.shoeclothingsizeconverter.SizeChartFragment">
+    tools:context="net.cuongmai.myshoesize.SizeChartFragment">
 
 
 

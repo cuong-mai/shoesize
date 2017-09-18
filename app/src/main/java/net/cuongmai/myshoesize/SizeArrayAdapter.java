@@ -1,17 +1,14 @@
-package net.cuongmai.shoeclothingsizeconverter;
+package net.cuongmai.myshoesize;
 
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
-import android.database.sqlite.SQLiteDatabase;
-import android.media.Image;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -21,7 +18,7 @@ import java.util.ArrayList;
  */
 
 public class SizeArrayAdapter extends ArrayAdapter<Size> {
-    private final int BOOKMARK_IMAGE_SELECTED_ID = R.drawable.bookmark_selected;
+    private final int BOOKMARK_IMAGE_SELECTED_ID = R.drawable.bookmark_selected_red;
     private final int BOOKMARK_IMAGE_UNSELECTED_ID = R.drawable.bookmark_unselected;
 
     private Activity mContext;
@@ -89,8 +86,8 @@ public class SizeArrayAdapter extends ArrayAdapter<Size> {
                     mDatabaseHelper.updateSizeBookmarkName(mTableName, currentSize.getId(), "");
                 } else {
                     final AlertDialog.Builder inputAlert = new AlertDialog.Builder(mContext);
-                    inputAlert.setTitle("Bookmark Size");
-                    inputAlert.setMessage("Person(s) having this size");
+                    inputAlert.setTitle("Bookmark the Size");
+                    inputAlert.setMessage("Persons having this size");
 
                     final EditText userInput = new EditText(mContext);
                     inputAlert.setView(userInput);
