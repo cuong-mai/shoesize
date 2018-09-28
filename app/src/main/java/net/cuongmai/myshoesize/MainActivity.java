@@ -78,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
 //        // AdMob
 //        // TODO: Comment this out when publish
 //        AdRequest request = new AdRequest.Builder()
-//                .addTestDevice("1316D584510417EF9777569C3CB66EAC")
+//                .addTestDevice("[TEST_DEVICE_ID]")
 //                .build();
 
         MobileAds.initialize(getApplicationContext(),
-                "ca-app-pub-1710076895881118/2386385925");
+                "[AD_ID]");
 
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
